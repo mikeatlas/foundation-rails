@@ -19,11 +19,11 @@ $include-html-form-classes: $include-html-classes !default;
 $switch-bg: $gainsboro !default;
 
 // We use these to control the switch heights for our default classes
-$switch-height-tny: 1.5rem !default;
-$switch-height-sml: 1.75rem !default;
-$switch-height-med: 2rem !default;
-$switch-height-lrg: 2.5rem !default;
-$switch-bottom-margin: 1.5rem !default;
+$switch-height-tny: rem-calc(24) !default;
+$switch-height-sml: rem-calc(28) !default;
+$switch-height-med: rem-calc(32) !default;
+$switch-height-lrg: rem-calc(40) !default;
+$switch-bottom-margin: rem-calc(24) !default;
 
 // We use these to style the switch-paddle
 $switch-paddle-bg: $white !default;
@@ -76,8 +76,8 @@ $switch-active-color: $primary-color;
     content: "";
     display: block;
     background: $switch-paddle-bg;
-    position: absolute; top: .25rem; left: .25rem;
-    width: $switch-height-med - 0.5rem; height: $switch-height-med - 0.5rem;
+    position: absolute; top: rem-calc(4); left: rem-calc(4);
+    width: $switch-height-med - rem-calc(8); height: $switch-height-med - rem-calc(8);
 
     -webkit-transition: left $transition-speed $transition-ease;
     -moz-transition: left $transition-speed $transition-ease;
@@ -93,7 +93,7 @@ $switch-active-color: $primary-color;
   }
 
   input:checked + label:after {
-    left: $switch-height-med + 0.25rem;
+    left: $switch-height-med + rem-calc(4);
   }
 }
 
@@ -101,7 +101,7 @@ $switch-active-color: $primary-color;
 //
 // $height - Height (in px) of the switch. Default: $switch-height-med.
 // $font-size - Font size of text in switch. Default: $switch-font-size-med.
-// $line-height - Line height of switch. Default: 2.3rem.
+// $line-height - Line height of switch. Default: rem-calc(36.8).
 @mixin switch-size($height: $switch-height-med) {
 
   label {
@@ -109,11 +109,11 @@ $switch-active-color: $primary-color;
   }
 
   label:after {
-    width: $height - 0.5rem; height: $height - 0.5rem;
+    width: $height - rem-calc(8); height: $height - rem-calc(8);
   }
 
   input:checked + label:after {
-    left: $height + 0.25rem;
+    left: $height + rem-calc(4);
   }
 
 }
@@ -149,10 +149,10 @@ $switch-active-color: $primary-color;
   // Setting up the radius for switches
   @if $radius == true {
     label {
-      border-radius: 2rem;
+      border-radius: rem-calc(32);
     }
     label:after {
-      border-radius: 2rem;
+      border-radius: rem-calc(32);
     }
   }
   @else if $radius {
@@ -210,8 +210,8 @@ $switch-active-color: $primary-color;
 
         // Make the switch completely round, like a pill
         &.round { @include radius(1000px);
-          label { @include radius(2rem); }
-          label:after { @include radius(2rem); }
+          label { @include radius(rem-calc(32)); }
+          label:after { @include radius(rem-calc(32)); }
         }
 
       }

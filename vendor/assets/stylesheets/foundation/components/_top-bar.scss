@@ -49,7 +49,7 @@ $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
 $topbar-link-padding: $topbar-height / 3 !default;
 
-$topbar-button-font-size: 0.75rem !default;
+$topbar-button-font-size: rem-calc(12) !default;
 $topbar-button-top: 7px !default;
 
 $topbar-dropdown-label-color: $monsoon !default;
@@ -160,11 +160,11 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       form,
       input { margin-bottom: 0; }
 
-      input { height: 1.8rem; padding-top: .35rem; padding-bottom: .35rem; font-size: $topbar-button-font-size; }
+      input { height: rem-calc(28.8); padding-top: rem-calc(5.6); padding-bottom: rem-calc(5.6); font-size: $topbar-button-font-size; }
 
       .button, button {
-        padding-top: .45rem;
-        padding-bottom: .35rem;
+        padding-top: rem-calc(7.2);
+        padding-bottom: rem-calc(5.6);
         margin-bottom: 0;
         font-size: $topbar-button-font-size;
           // position: relative;
@@ -542,7 +542,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
               &:after {
                 border: none;
                 content: "\00bb";
-                top: 1rem;
+                top: rem-calc(16);
                 margin-top: -1px;
                 #{$opposite-direction}: 5px;
                 line-height: 1.2;

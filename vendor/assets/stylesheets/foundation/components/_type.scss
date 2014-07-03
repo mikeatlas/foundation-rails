@@ -12,8 +12,8 @@ $header-font-weight: $font-weight-normal !default;
 $header-font-style: $font-weight-normal !default;
 $header-font-color: $jet !default;
 $header-line-height: 1.4 !default;
-$header-top-margin: .2rem !default;
-$header-bottom-margin: .5rem !default;
+$header-top-margin: rem-calc(3.2) !default;
+$header-bottom-margin: rem-calc(8) !default;
 $header-text-rendering: optimizeLegibility !default;
 
 // We use these to control header font sizes
@@ -22,7 +22,7 @@ $h2-font-size: rem-calc(37) !default;
 $h3-font-size: rem-calc(27) !default;
 $h4-font-size: rem-calc(23) !default;
 $h5-font-size: rem-calc(18) !default;
-$h6-font-size: 1rem !default;
+$h6-font-size: rem-calc(16) !default;
 
 // We use these to control header size reduction on small screens
 $h1-font-reduction: rem-calc(10) !default;
@@ -36,8 +36,8 @@ $h6-font-reduction: 0 !default;
 $subheader-line-height: 1.4 !default;
 $subheader-font-color: scale-color($header-font-color, $lightness: 35%) !default;
 $subheader-font-weight: $font-weight-normal !default;
-$subheader-top-margin: .2rem !default;
-$subheader-bottom-margin: .5rem !default;
+$subheader-top-margin: rem-calc(3.2) !default;
+$subheader-bottom-margin: rem-calc(8) !default;
 
 // A general <small> styling
 $small-font-size: 60% !default;
@@ -46,7 +46,7 @@ $small-font-color: scale-color($header-font-color, $lightness: 35%) !default;
 // We use these to style paragraphs
 $paragraph-font-family: inherit !default;
 $paragraph-font-weight: $font-weight-normal !default;
-$paragraph-font-size: 1rem !default;
+$paragraph-font-size: rem-calc(16) !default;
 $paragraph-line-height: 1.6 !default;
 $paragraph-margin-bottom: rem-calc(20) !default;
 $paragraph-aside-font-size: rem-calc(14) !default;
@@ -82,12 +82,12 @@ $list-font-size: $paragraph-font-size !default;
 $list-line-height: $paragraph-line-height !default;
 $list-margin-bottom: $paragraph-margin-bottom !default;
 $list-style-position: outside !default;
-$list-side-margin: 1.1rem !default;
-$list-ordered-side-margin: 1.4rem !default;
+$list-side-margin: rem-calc(17.6) !default;
+$list-ordered-side-margin: rem-calc(22.4) !default;
 $list-side-margin-no-bullet: 0 !default;
 $list-nested-margin: rem-calc(20) !default;
 $definition-list-header-weight: $font-weight-bold !default;
-$definition-list-header-margin-bottom: .3rem !default;
+$definition-list-header-margin-bottom: rem-calc(4.8) !default;
 $definition-list-margin-bottom: rem-calc(12) !default;
 
 // We use these to style blockquotes

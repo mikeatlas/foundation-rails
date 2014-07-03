@@ -40,7 +40,7 @@ $split-button-pip-default-float-sml: rem-calc(-6) !default;
 // We use these to control medium split buttons
 $split-button-padding-med: $button-pip-med * 9 !default;
 $split-button-span-width-med: $button-pip-med * 5.5 !default;
-$split-button-pip-size-med: $button-pip-med - rem-calc(3) !default;
+$split-button-pip-size-med: $button-pip-med - rem-calc(3.2) !default;
 $split-button-pip-top-med: $button-pip-med * 1.5 !default;
 $split-button-pip-default-float-med: rem-calc(-6) !default;
 
@@ -179,7 +179,7 @@ $split-button-pip-default-float-lrg: rem-calc(-6) !default;
       &.tiny { @include split-button(tiny, false, false, false); }
       &.small { @include split-button(small, false, false, false); }
       &.large { @include split-button(large, false, false, false); }
-      &.expand { padding-left: 2rem; }
+      &.expand { padding-left: rem-calc(32); }
 
       &.secondary { @include split-button(false, $split-button-pip-color-alt, false, false); }
 

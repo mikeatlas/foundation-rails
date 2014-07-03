@@ -15,14 +15,14 @@ $include-html-icon-bar-classes: $include-html-classes !default;
 // We use these to style the icon-bar and items
 $icon-bar-bg: $oil !default;
 $icon-bar-font-color: $white !default;
-$icon-bar-font-size: 1rem !default;
+$icon-bar-font-size: rem-calc(16) !default;
 $icon-bar-hover-color: $primary-color !default;
 $icon-bar-icon-color: $white !default;
-$icon-bar-icon-size: 1.875rem !default;
-$icon-bar-image-width: 1.875rem !default;
-$icon-bar-image-height: 1.875rem !default;
+$icon-bar-icon-size: rem-calc(30) !default;
+$icon-bar-image-width: rem-calc(30) !default;
+$icon-bar-image-height: rem-calc(30) !default;
 $icon-bar-active-color: $primary-color !default;
-$icon-bar-item-padding: 1.25rem !default;
+$icon-bar-item-padding: rem-calc(20) !default;
 
 //
 // @mixins
@@ -50,7 +50,7 @@ $icon-bar-item-padding: 1.25rem !default;
 			margin: 0 auto; 
 
 			& + label {
-				margin-top: .0625rem;
+				margin-top: rem-calc(1);
 			}
 		}
 
@@ -68,7 +68,7 @@ $icon-bar-item-padding: 1.25rem !default;
 	&.label-right > * {
 
 		i, img { 
-			margin: 0 .0625rem 0 0; 
+			margin: 0 rem-calc(1) 0 0;
 			display: inline-block;
 
 			& + label {
@@ -135,7 +135,7 @@ $icon-bar-item-padding: 1.25rem !default;
 		i, img { 
 
 			& + label {
-				margin-top: .0625rem;
+				margin-top: rem-calc(1);
 			}
 		}
 
