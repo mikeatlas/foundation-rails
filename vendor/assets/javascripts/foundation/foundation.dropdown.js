@@ -243,7 +243,7 @@
           return {left: p.left - this.outerWidth() + t.outerWidth(), top: p.top + t.outerHeight()};
         }
 
-        return {left: p.left, top: p.top + t.outerHeight()};
+        return {left: this.hasClass('right') ? p.left + t.outerWidth() - this.outerWidth() : p.left, top: p.top + t.outerHeight()};
       },
       left: function (t, s) {
         var p = Foundation.libs.dropdown.dirs._base.call(this, t);
