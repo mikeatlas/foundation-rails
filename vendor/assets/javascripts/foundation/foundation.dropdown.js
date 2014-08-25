@@ -271,8 +271,8 @@
 
       this.rule_idx = sheet.cssRules.length;
 
-      var sel_before = '.f-dropdown.open:before',
-          sel_after  = '.f-dropdown.open:after',
+      var sel_before = '.f-dropdown.open:not(.drop-left):not(.drop-right):before',
+          sel_after  = '.f-dropdown.open:not(.drop-left):not(.drop-right):after',
           css_before = 'left: ' + pip_offset_base + 'px;',
           css_after  = 'left: ' + (pip_offset_base - 1) + 'px;';
 
